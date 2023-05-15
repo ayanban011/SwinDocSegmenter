@@ -85,7 +85,7 @@ In this section we release the pre-trained weights for all the best DocEnTr mode
   </tr>
   <tr>
     <td class="tg-baqh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Prima</span></td>
-    <td class="tg-baqh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">[<a href=https://github.com/ayanban011/SwinDocSegmenter/blob/main/configs/maskdino_R50_bs16_50ep_4s_dowsample1_2048.yaml>config-prima</a></span></td>
+    <td class="tg-baqh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><a href=https://github.com/ayanban011/SwinDocSegmenter/blob/main/configs/maskdino_R50_bs16_50ep_4s_dowsample1_2048.yaml>config-prima</a></span></td>
     <td class="tg-baqh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">weights2</span></td>
     <td class="tg-baqh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">54.39</span></td>
   </tr>
