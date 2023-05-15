@@ -27,8 +27,8 @@ TORCH_CUDA_ARCH_LIST='8.0' FORCE_CUDA=1 python setup.py build install
 
 ### Example conda environment setup
 ```bash
-conda create --name maskdino python=3.8 -y
-conda activate maskdino
+conda create --name swindocseg python=3.8 -y
+conda activate swindocseg
 conda install pytorch==1.9.0 torchvision==0.10.0 cudatoolkit=11.1 -c pytorch -c nvidia
 pip install -U opencv-python
 
@@ -38,8 +38,8 @@ cd detectron2
 pip install -e .
 
 cd ..
-git clone git@github.com:facebookresearch/MaskDINO.git
-cd MaskDINO
+git clone https://github.com/ayanban011/SwinDocSegmenter.git
+cd SwinDocSegmenter
 pip install -r requirements.txt
 cd maskdino/modeling/pixel_decoder/ops
 sh make.sh
