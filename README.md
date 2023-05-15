@@ -14,15 +14,15 @@ Pytorch implementation of the paper [SwinDocSegmenter: An End-to-End Unified Dom
     </tr>
     <tr>
         <td style="text-align:center"> 
-            <img src="./git_images/3.png"  alt="1" width = 600px height = 300px >
+            <img src="./images/magazine.png"  alt="1" width = 600px height = 300px >
         </td>
         <td style="text-align:center">
-            <img src="./git_images/3_pred.png"  alt="2" width = 600px height = 300px>
+            <img src="./images/paper.png"  alt="2" width = 600px height = 300px>
         </td>
     </tr>
     <tr>
         <td style="text-align:center">
-            Historical Document 
+            Tables 
         </td>
         <td style="text-align:center">
             Others 
@@ -30,10 +30,10 @@ Pytorch implementation of the paper [SwinDocSegmenter: An End-to-End Unified Dom
     </tr>
     <tr>
         <td style="text-align:center"> 
-            <img src="./git_images/14.png"  alt="1" width = 600px height = 300px >
+            <img src="./images/table.png"  alt="1" width = 600px height = 300px >
         </td>
         <td style="text-align:center">
-            <img src="./git_images/14_pred.png"  alt="2" width = 600px height = 300px>
+            <img src="./images/others.png"  alt="2" width = 600px height = 300px>
         </td>
     </tr>
 
