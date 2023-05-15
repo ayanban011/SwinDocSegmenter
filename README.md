@@ -39,3 +39,11 @@ Pytorch implementation of the paper [SwinDocSegmenter: An End-to-End Unified Dom
 
 </table>
 
+# Getting Started 
+
+### Step 1: Clone this repository and change directory to repository root
+```bash
+git clone https://github.com/ayanban011/SwinDocSegmenter.git 
+cd SwinDocSegmenter
+```
+
