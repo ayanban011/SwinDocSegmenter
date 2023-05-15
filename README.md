@@ -9,7 +9,7 @@ Pytorch implementation of the paper [SwinDocSegmenter: An End-to-End Unified Dom
             Magazines 
         </td>
         <td style="text-align:center">
-            Scientific Reports> 
+            Scientific Reports 
         </td>
     </tr>
     <tr>
