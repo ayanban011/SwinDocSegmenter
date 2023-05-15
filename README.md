@@ -64,3 +64,21 @@ python ./train_net.py \
 python train_net.py --num-gpus 1 --config-file config_path SOLVER.IMS_PER_BATCH SET_TO_SOME_REASONABLE_VALUE SOLVER.BASE_LR SET_TO_SOME_REASONABLE_VALUE
 ```
 
+## Citation
+
+If you find this useful for your research, please cite it as follows:
+
+```bash
+@article{banerjee2023swindocsegmenter,
+  title={SwinDocSegmenter: An End-to-End Unified Domain Adaptive Transformer for Document Instance Segmentation},
+  author={Banerjee, Ayan and Biswas, Sanket and Llad{\'o}s, Josep and Pal, Umapada},
+  journal={arXiv preprint arXiv:2305.04609},
+  year={2023}
+}
+```
+## Authors
+- [Ayan Banerjee](https://github.com/ayanban011)
+- [Sanket Biswas](https://github.com/biswassanket)
+## Conclusion
+Thank you for interesting in our work, and sorry if there is any bugs.
+
