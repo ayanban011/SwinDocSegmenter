@@ -76,6 +76,14 @@ If you find this useful for your research, please cite it as follows:
   year={2023}
 }
 ```
+
+## Acknowledgement
+
+Many thanks to these excellent opensource projects 
+* [MaskDINO](https://github.com/IDEA-Research/MaskDINO) 
+* [DINO](https://github.com/IDEA-Research/DINO)
+
+
 ## Authors
 - [Ayan Banerjee](https://github.com/ayanban011)
 - [Sanket Biswas](https://github.com/biswassanket)
