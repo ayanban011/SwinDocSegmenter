@@ -50,7 +50,7 @@ cd SwinDocSegmenter
 ### Step 2: Setup and activate the conda environment with required dependencies:
 follow the [installation instructions](https://github.com/ayanban011/SwinDocSegmenter/edit/main/INSTALL.md)
 
-### Step 5: For testing our model, download the best pretrained model weights from the **Model Zoo**
+### Step 3: For testing our model, download the best pretrained model weights from the **Model Zoo**
 
 ```bash
 python ./train_net.py \
@@ -59,3 +59,6 @@ python ./train_net.py \
     --num-gpus 1 \
     MODEL.WEIGHTS ./model_final.pth
 ```
+### Step 4: For training the model from scratch, use this magic command for training on 'n' GPUs:
+python train_net.py --num-gpus 1 --config-file config_path SOLVER.IMS_PER_BATCH SET_TO_SOME_REASONABLE_VALUE SOLVER.BASE_LR SET_TO_SOME_REASONABLE_VALUE
+
