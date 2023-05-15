@@ -47,3 +47,5 @@ git clone https://github.com/ayanban011/SwinDocSegmenter.git
 cd SwinDocSegmenter
 ```
 
+### Step 2: Setup and activate the conda environment with required dependencies:
+follow the [installation instructions](https://github.com/ayanban011/SwinDocSegmenter/edit/main/INSTALL.md)
