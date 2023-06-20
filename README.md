@@ -63,9 +63,25 @@ python ./train_net.py \
 ```bash
 python train_net.py --num-gpus 1 --config-file config_path SOLVER.IMS_PER_BATCH SET_TO_SOME_REASONABLE_VALUE SOLVER.BASE_LR SET_TO_SOME_REASONABLE_VALUE
 ```
+### Step 4: For training the model from scratch, use this magic command for training on 'n' GPUs:
+In train_net.py
+```bash
+def main(args):
+    register_coco_instances("dataset_train",{},"path to the ground truth json file","path to the training image folder")
+    register_coco_instances("dataset_val",{},"path to the ground truth json file","path to the validation image folder")
+
+    MetadataCatalog.get("dataset_train").thing_classes = ['name of the classes']
+    MetadataCatalog.get("dataset_val").thing_classes = ['name of the classes']
+    ...
+if __name__ == "__main__":
+    ...
+    MetadataCatalog.get("dataset_train").thing_classes = ['name of the classes']
+    MetadataCatalog.get("dataset_val").thing_classes = ['name of the classes']
+    ...
+```
 
 ## Model Zoo
-In this section we release the pre-trained weights for all the best DocEnTr model variants trained on benchmark datasets.
+In this section, we release the pre-trained weights for all the best DocEnTr model variants trained on benchmark datasets.
 
 <table class="tg">
 <thead>
@@ -134,5 +150,5 @@ Many thanks to these excellent opensource projects
 - [Ayan Banerjee](https://github.com/ayanban011)
 - [Sanket Biswas](https://github.com/biswassanket)
 ## Conclusion
-Thank you for interesting in our work, and sorry if there is any bugs.
+Thank you for your interest in our work, and sorry if there are any bugs.
 
