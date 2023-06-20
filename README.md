@@ -64,7 +64,7 @@ python ./train_net.py \
 python train_net.py --num-gpus 1 --config-file config_path SOLVER.IMS_PER_BATCH SET_TO_SOME_REASONABLE_VALUE SOLVER.BASE_LR SET_TO_SOME_REASONABLE_VALUE
 ```
 ### Step 4: For training the model from scratch, use this magic command for training on 'n' GPUs:
-In train_net.py
+In ```train_net.py```
 ```bash
 def main(args):
     register_coco_instances("dataset_train",{},"path to the ground truth json file","path to the training image folder")
