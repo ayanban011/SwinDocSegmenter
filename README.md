@@ -79,6 +79,18 @@ if __name__ == "__main__":
     MetadataCatalog.get("dataset_val").thing_classes = ['name of the classes']
     ...
 ```
+In ```Config File```
+```bash
+...
+SEM_SEG_HEAD:
+    ...
+    NUM_CLASSES: #no. of classes
+...
+DATASETS:
+  TRAIN: ("dataset_train",)
+  TEST: ("dataset_val",)
+...
+```
 
 ## Model Zoo
 In this section, we release the pre-trained weights for all the best DocEnTr model variants trained on benchmark datasets.
