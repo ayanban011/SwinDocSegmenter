@@ -1,6 +1,21 @@
-_BASE_: Base-COCO-InstanceSegmentation.yaml
+_BASE_: ../Base-COCO-InstanceSegmentation.yaml
 MODEL:
   META_ARCHITECTURE: "MaskDINO"
+  BACKBONE:
+    NAME: "D2SwinTransformer"
+  SWIN:
+    EMBED_DIM: 192
+    DEPTHS: [ 2, 2, 18, 2 ]
+    NUM_HEADS: [ 6, 12, 24, 48 ]
+    WINDOW_SIZE: 12
+    APE: False
+    DROP_PATH_RATE: 0.3
+    PATCH_NORM: True
+    PRETRAIN_IMG_SIZE: 1024
+  WEIGHTS: "swin_large_patch4_window12_384_22k.pkl"
+  PIXEL_MEAN: [ 123.675, 116.280, 103.530 ]
+  PIXEL_STD: [ 58.395, 57.120, 57.375 ]
+  # head
   SEM_SEG_HEAD:
     NAME: "MaskDINOHead"
     IGNORE_VALUE: 255
@@ -11,9 +26,9 @@ MODEL:
     NORM: "GN"
     # pixel decoder
     PIXEL_DECODER_NAME: "MaskDINOEncoder"
-    DIM_FEEDFORWARD: 2048
-    NUM_FEATURE_LEVELS: 3
-    TOTAL_NUM_FEATURE_LEVELS: 4
+    DIM_FEEDFORWARD: 512
+    NUM_FEATURE_LEVELS: 4
+    TOTAL_NUM_FEATURE_LEVELS: 5
     IN_FEATURES: ["res2", "res3", "res4", "res5"]
     DEFORMABLE_TRANSFORMER_ENCODER_IN_FEATURES: ["res2","res3", "res4", "res5"]
     COMMON_STRIDE: 4
@@ -32,7 +47,7 @@ MODEL:
     NUM_OBJECT_QUERIES: 300
     NHEADS: 8
     DROPOUT: 0.0
-    DIM_FEEDFORWARD: 1024
+    DIM_FEEDFORWARD: 2048
     ENC_LAYERS: 0
     PRE_NORM: False
     ENFORCE_INPUT_PROJ: False
@@ -46,20 +61,22 @@ MODEL:
     TWO_STAGE: True
     DN: "seg"
     DN_NUM: 100
-    INITIALIZE_BOX_TYPE: 'no'
+    INITIALIZE_BOX_TYPE: 'bitmask'
     TEST:
       SEMANTIC_ON: False
       INSTANCE_ON: True
       PANOPTIC_ON: False
       OVERLAP_THRESHOLD: 0.8
       OBJECT_MASK_THRESHOLD: 0.25
+
 DATASETS:
   TRAIN: ("pub_train",)
   TEST: ("pub_val",)
+
 SOLVER:
   AMP:
     ENABLED: True
 TEST:
-  EVAL_PERIOD: 5000
+  EVAL_PERIOD: 1000
 #  EVAL_FLAG: 1
 OUTPUT_DIR: "/data2/users/abanerjee/output_publay"
