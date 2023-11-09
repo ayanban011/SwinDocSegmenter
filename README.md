@@ -59,6 +59,7 @@ python ./train_net.py \
     --num-gpus 1 \
     MODEL.WEIGHTS ./model_final.pth
 ```
+
 ### Step 4: For training the model from scratch, use this magic command for training on 'n' GPUs:
 ```bash
 python train_net.py --num-gpus 1 --config-file config_path SOLVER.IMS_PER_BATCH SET_TO_SOME_REASONABLE_VALUE SOLVER.BASE_LR SET_TO_SOME_REASONABLE_VALUE
