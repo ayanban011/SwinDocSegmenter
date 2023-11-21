@@ -148,7 +148,7 @@ In order to, test the custom images, you should put all the images and create a 
 
 Dataset Link: [Custom DocLayNet Test Set](https://drive.google.com/drive/folders/1e34rDpYMJRJDhCPMy3PecCE5kIUPdUzw?usp=drive_link)
 
-Annotations Link: [A little annotations](https://drive.google.com/drive/folders/1e34rDpYMJRJDhCPMy3PecCE5kIUPdUzw?usp=sharing)
+Annotations Link: [A little annotations](https://drive.google.com/file/d/1PkumOb2aCQ1d5jWBdDo1RQFnHxKO-Zqe/view?usp=drive_link)
 
 ## Citation
 
