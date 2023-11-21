@@ -1,8 +1,5 @@
 # SwinDocSegmenter
 
-## Updates:
-    1. Semi-Supervised Settings will be updated soon...
-
 ## Description
 Pytorch implementation of the paper [SwinDocSegmenter: An End-to-End Unified Domain Adaptive Transformer for Document Instance Segmentation](https://arxiv.org/abs/2305.04609). This model is implemented on top of the [detectron2](https://github.com/facebookresearch/detectron2) framework. The proposed model can be used to analyze complex layouts including [magazines](https://www.primaresearch.org/datasets/Layout_Analysis), [Scientific Reports](https://github.com/ibm-aur-nlp/PubLayNet), [historical documents](https://dell-research-harvard.github.io/HJDataset/), [patents](https://github.com/DS4SD/DocLayNet) and so on as shown in the following examples.
 
@@ -150,6 +147,9 @@ Dataset Link: [Custom DocLayNet Test Set](https://drive.google.com/drive/folders
 
 Annotations Link: [A little annotations](https://drive.google.com/file/d/1PkumOb2aCQ1d5jWBdDo1RQFnHxKO-Zqe/view?usp=drive_link)
 
+## For Semi-Supervised Settings
+Please refer to the SemiDocSeg folder for generating support sets and new_annotations. The rest of the training and testing procedure is as same as SwinDocSegmenter.
+
 ## Citation
 
 If you find this useful for your research, please cite it as follows:
@@ -159,6 +159,12 @@ If you find this useful for your research, please cite it as follows:
   title={SwinDocSegmenter: An End-to-End Unified Domain Adaptive Transformer for Document Instance Segmentation},
   author={Banerjee, Ayan and Biswas, Sanket and Llad{\'o}s, Josep and Pal, Umapada},
   journal={arXiv preprint arXiv:2305.04609},
+  year={2023}
+}
+
+@article{banerjee2023semidocseg,
+  title={SemiDocSeg: Harnessing Semi-Supervised Learning for Document Layout Analysis},
+  author={Banerjee, Ayan and Biswas, Sanket and Llad{\'o}s, Josep and Pal, Umapada},
   year={2023}
 }
 ```
