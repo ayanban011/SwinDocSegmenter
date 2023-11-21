@@ -146,9 +146,9 @@ In this section, we release the pre-trained weights for all the best DocEnTr mod
 
 In order to, test the custom images, you should put all the images and create a JSON file that contains all the categories of the dataset; image_name; image_id. We have created a sample test set for DocLayNet. You can create the same for other datasets, by following the same structure.
 
-Dataset Link: <a href=https://drive.google.com/drive/folders/1e34rDpYMJRJDhCPMy3PecCE5kIUPdUzw?usp=drive_link>Custom DocLayNet Test Set</a>
+Dataset Link: [Custom DocLayNet Test Set](https://drive.google.com/drive/folders/1e34rDpYMJRJDhCPMy3PecCE5kIUPdUzw?usp=drive_link)
 
-Annotations Link: <a href=https://drive.google.com/drive/folders/1e34rDpYMJRJDhCPMy3PecCE5kIUPdUzw?usp=sharing>A little annotations</a>
+Annotations Link: [A little annotations](https://drive.google.com/drive/folders/1e34rDpYMJRJDhCPMy3PecCE5kIUPdUzw?usp=sharing)
 
 ## Citation
 
