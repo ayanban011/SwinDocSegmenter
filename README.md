@@ -94,7 +94,7 @@ DATASETS:
 ```
 
 ## Model Zoo
-In this section, we release the pre-trained weights for all the best DocEnTr model variants trained on benchmark datasets.
+In this section, we release the pre-trained weights for all the best SwinDocSegmenter model variants trained on benchmark datasets.
 
 <table class="tg">
 <thead>
