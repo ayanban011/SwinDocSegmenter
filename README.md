@@ -162,10 +162,13 @@ If you find this useful for your research, please cite it as follows:
   year={2023}
 }
 
-@article{banerjee2023semidocseg,
-  title={SemiDocSeg: Harnessing Semi-Supervised Learning for Document Layout Analysis},
+@article{banerjee2024semidocseg,
+  title={SemiDocSeg: harnessing semi-supervised learning for document layout analysis},
   author={Banerjee, Ayan and Biswas, Sanket and Llad{\'o}s, Josep and Pal, Umapada},
-  year={2023}
+  journal={International Journal on Document Analysis and Recognition (IJDAR)},
+  pages={1--18},
+  year={2024},
+  publisher={Springer}
 }
 ```
 
