@@ -48,7 +48,7 @@ cd SwinDocSegmenter
 ```
 
 ### Step 2: Setup and activate the conda environment with required dependencies:
-follow the [installation instructions](https://github.com/ayanban011/SwinDocSegmenter/edit/main/INSTALL.md)
+follow the [installation instructions](https://github.com/ayanban011/SwinDocSegmenter/blob/main/INSTALL.md)
 
 ### Step 3: For testing our model, download the best pretrained model weights from the **Model Zoo**
 
